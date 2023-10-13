@@ -188,12 +188,12 @@ export default {
   overflow: hidden;
   color: #c4c9d2;
 }
-.notify /deep/ .el-badge__content.is-fixed {
+.notify ::v-deep .el-badge__content.is-fixed {
   transform-origin: center center;
   transform: translateY(-50%) translateX(100%) scale(0.8) !important;
 }
 
-.notify /deep/ .el-badge__content {
+.notify ::v-deep .el-badge__content {
   border: 1px solid transparent !important;
   line-height: 20px !important;
 }

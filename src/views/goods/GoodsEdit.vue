@@ -169,7 +169,7 @@ export default {
     },
   },
   async created() {
-    console.log('goodsId: ', this.goodsId)
+    // console.log('goodsId: ', this.goodsId)
     if (this.goodsId !== 0) {
       await this.getGoods(this.goodsId)
     }
@@ -298,7 +298,7 @@ export default {
     },
     // 查询子分类
     async getSubCategory(pid) {
-      console.log('pid: ', pid)
+      // console.log('pid: ', pid)
       const res = await category.getCategoryList(pid, 1, 100)
       if (res.error_code !== undefined) {
         this.$message.error(`${res.msg}`)
