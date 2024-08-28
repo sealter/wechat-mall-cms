@@ -159,7 +159,7 @@ export default {
     handleGoodsChange(val) {
       if (val.length === 3) {
         const goodsId = val['2']
-        this.searchForm.goodsId = goodsId
+        this.searchForm.goodsId = parseInt(goodsId)
       } else {
         this.searchForm.goodsId = 0
         this.specList = []

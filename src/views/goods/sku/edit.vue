@@ -207,7 +207,7 @@ export default {
       console.log(val)
       if (val.length === 3) {
         const goodsId = val['2']
-        this.form.goodsId = goodsId
+        this.form.goodsId = parseInt(goodsId)
         this.getGoodsSpecList(goodsId)
       } else {
         this.form.goodsId = 0
